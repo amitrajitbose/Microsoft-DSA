@@ -18,9 +18,7 @@ def selectionSort(lst):
 			c+=1
 			'''if any shifting is required, the index position would change from zero
 			   and hence we will swap them'''
-			temp=lst[i]
-			lst[i]=lst[index]
-			lst[index]=temp
+			lst[i],lst[index]=lst[index],lst[i]
 	print (lst)
 	return c
 
@@ -29,5 +27,5 @@ c=selectionSort(mylist)
 print (c , " swaps")
 #time.sleep(5)
 
-'''Uncomment Lines:3 and 30, if you want the console screen to wait for 5 seconds after 
+'''Uncomment Lines:3 and 28, if you want the console screen to wait for 5 seconds after 
    the result has been shown'''
