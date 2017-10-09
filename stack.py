@@ -18,7 +18,7 @@ def peek():
   print("VALUE AT TOP OF STACK: ",stack[-1])
   return stack
 def show():
-  print (stack[::-1])
+  print (stack)
   
 choices={
   0:exit,
